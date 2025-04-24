@@ -27,7 +27,7 @@ def get_post(post_id):
     post = collection.find_one({'_id': ObjectId(post_id)})
     if post:
         post['_id'] = str(post['_id'])
-        return jsonify({'post': post})
+        return jsonify({'pos': post})
     else:
         return jsonify({'error': 'Post not found'}), 404
 
