@@ -1,3 +1,6 @@
+
+
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +18,7 @@ spec:
     spec:
       containers:
       - name: blog
-        image: daniarias7/blog-app-posts:latest # <- This comes from Docker Hub/ need to change tags
+        image: tartarusboss/blog-app-posts:latest # <- This comes from Docker Hub/ need to change tags
         ports:
         - containerPort: 5000
 
